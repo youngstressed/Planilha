@@ -3,7 +3,7 @@ const fs = require('fs');
 const csv = fs.readFileSync('./oscar_best_pictures.csv').toString();
 const {
     quebraLinhas,separaColunas,separaConteudo,parteDificil
-} = require('./lib/csv');
+} = require('csv');
 
 const linhas = quebraLinhas(csv);
 const primeiraLinha = linhas.shift();
